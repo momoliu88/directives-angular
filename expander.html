@@ -1,0 +1,15 @@
+<html ng-app="expanderModule">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script src="./angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./ExpanderSimple.css"/>
+</head>
+<body ng-controller='SomeController' >
+<accordion>
+    <expander class='expander' ng-repeat='expander in expanders' abc-title='expander.title'>
+        {{expander.text}}
+    </expander>
+</accordion>
+</body>
+<script src="./expander.js"></script>
+</html>
